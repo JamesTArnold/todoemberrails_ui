@@ -13,11 +13,7 @@
 
   <ul class="collection">
     {{#each model as |list|}}
-      <li>
-        <a href="#">
-          {{list.name}}
-        </a>
-      </li>
+      {{lists-list-item name=list.name tagName="li"}}
     {{/each}}
   </ul>
 
