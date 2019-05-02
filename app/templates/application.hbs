@@ -2,14 +2,14 @@
   <nav class="main-nav">
     <div class="logo">
       <h1>
-        <a href="#">
+        {{#link-to "index"}}
           <img src="" alt="TodoList">
-        </a>
+        {{/link-to}}
       </h1>
     </div>
 
     <div class="links">
-      <a href="#">Lists</a>
+      {{#link-to "lists"}}Lists{{/link-to}}
       <a href="#">Sign up</a>
       <a href="#">Log in </a>
       <a href="#">Log out</a>

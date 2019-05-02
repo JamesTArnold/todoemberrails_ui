@@ -1,6 +1,6 @@
 <div class="panel-heading">
   <div class="search">
-    <input type="text" placeholder="Search your lists by name">
+    {{input type="text" placeholder="Search your lists by name" value=search}}
   </div>
 
   <a href="#">
@@ -16,5 +16,6 @@
       {{lists-list-item name=list.name tagName="li"}}
     {{/each}}
   </ul>
-
 </div>
+
+{{outlet}}
