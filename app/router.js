@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('lists', function() {
     this.route('list', { path: '/:id' });
   });
+  this.route('list');
 });
 
 export default Router;
