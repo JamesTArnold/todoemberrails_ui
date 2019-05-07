@@ -5,7 +5,11 @@ export default Route.extend({
     return this.store.findRecord('list', id)
   },
 
-  afterModel(model) {
-    return model.get('items');
+  model() {
+    return this.store.findAll('list');
+  },
+
+  model() {
+    return this.store.findAll('item');
   }
 });
