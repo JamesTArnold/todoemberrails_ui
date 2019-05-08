@@ -1,8 +1,13 @@
 <div class="item">
 
-    <input type="checkbox" name="checkbox" value={{checked}}>
+    {{input type="checkbox" name="checkbox" checked=checked onClick=(action "updateChecked")}}
 
-    {{text}}
+    {{#if checked}}
+      <strike>{{text}}</strike>
+    {{else}}
+      {{text}}
+    {{/if}}
+
 
     <button type="button" name="edit">edit</button>
     <button type="button" name="save">save</button>

@@ -1,11 +1,13 @@
 <div class="card">
   <div class="card-heading">
-    {{this.model.attribute.name}}
+    <h1>
+    {{model.name}}
+    </h1>
   </div>
   <div class="body">
     <ul>
-      {{#each this.model as |item|}}
-        {{total-item checked=item.checked text=item.text}}
+      {{#each this.model.items as |item|}}
+        {{total-item checked=item.checked text=item.text onClick=(action "CheckedSaved")}}
       {{/each}}
     </ul>
   </div>
