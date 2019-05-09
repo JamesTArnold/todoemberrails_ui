@@ -7,7 +7,7 @@
   <div class="body">
     <ul>
       {{#each this.model.items as |item|}}
-        {{total-item checked=item.checked text=item.text onClick=(action "CheckedSaved")}}
+        {{total-item checked=item.checked text=item.text onclick=(action "checkedSaved")}}
       {{/each}}
     </ul>
   </div>
